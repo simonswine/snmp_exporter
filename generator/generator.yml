@@ -21,6 +21,21 @@ modules:
       ifType:
         type: EnumAsInfo
 
+
+  # Bridges
+  bridge:
+    walk:
+      - dot1dTpFdbPort
+      - dot1dTpFdbStatus
+    lookups:
+      - source_indexes: [dot1dTpFdbAddress]
+        lookup: dot1dTpFdbPort
+    overrides:
+      dot1dTpFdbStatus:
+        type: EnumAsStateSet
+      dot1dTpFdbPort:
+        ignore: true
+
 # Cisco Wireless LAN Controller
   cisco_wlc:
     walk:

@@ -134,6 +134,7 @@ $(MIBDIR)/.cisco_v2:
 	cp mibs/cisco_v2/ENTITY-STATE-MIB.my mibs/ENTITY-STATE-MIB
 	cp mibs/cisco_v2/ENTITY-STATE-TC-MIB.my mibs/ENTITY-STATE-TC-MIB
 	cp mibs/cisco_v2/ISDN-MIB.my mibs/ISDN-MIB
+	cp mibs/cisco_v2/BRIDGE-MIB.my mibs/BRIDGE-MIB
 	@rm -v $(TMP)
 	@touch $(MIBDIR)/.cisco_v2
 
